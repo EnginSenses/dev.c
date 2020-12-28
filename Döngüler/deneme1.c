@@ -16,5 +16,23 @@ main()
         buyuk=say2;
         kucuk=say1;
     }
-    
+    i=kucuk;
+    while (i<=buyuk)
+    {
+        if (i%2==0)
+        {
+            cifttop=i+cifttop;
+            ciftsay++;
+        }
+        else
+        {
+            tektop=i+tektop;
+            teksay++;
+        }
+        i++;
+    }
+    printf("Cift Sayilerin Toplami :%d\n",cifttop);
+    printf("cift Sayilerin Sayisi :%d\n",ciftsay);
+    printf("Tek Sayilerin Toplami :%d\n",tektop);
+    printf("Tek Sayilerin Sayisi :%d\n",teksay);
 }
